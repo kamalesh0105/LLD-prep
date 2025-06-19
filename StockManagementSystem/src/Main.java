@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        StockManager stockManager=new StockManager();
+        TransactionManager transactionManager=new TransactionManager();
         while(true){
             System.out.println("""
                     StockManagementSystem Portal
@@ -19,8 +21,6 @@ public class Main {
                     """);
             System.out.print("Enter your Choice:");
             int choice=sc.nextInt();
-            StockManager stockManager=new StockManager();
-            TransactionManager transactionManager=new TransactionManager();
           switch (choice){
               case 1:
                   //Add Product
